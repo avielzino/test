@@ -24,7 +24,7 @@ Route::get('/', function () {
 
     $data['sub_comments'] = sub_comment::all()->toArray();
 if(!(session()->has('alert'))){
-    session::put('alert','wellcom to my blog');
+    session::put('alert','wellcome to my blog');
 }
     return view('welcome', $data);
 });
